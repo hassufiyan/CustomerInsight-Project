@@ -1,0 +1,77 @@
+        <configuration>
+  <failOnMissingWebXml>false</failOnMissingWebXml>       
+  </configuration>
+
+
+
+class ReverseString{
+public static void main(String [] args){
+
+String input="Something";
+String rev="";
+
+for(int i=input.length()-1;i>=0;i--){
+reverse=rev+charAt(i);
+}
+System.out.println(reverse);
+}
+}
+-----------------------------------------------------
+using tocharArray;
+publci class ReverseArray{
+public static void main(String[] args){
+
+String input="Reverse"
+
+char[] rev=input.toCharArray()
+
+for(int i=rev.length()-1;i>=0;i--){
+System.out.println(rev[i]);
+}
+-------------------------------------------------------------------
+public class ReverseScanner{
+public static void main(String [] args){
+Scanner scn=new Scanner(System.in);
+Sysytem.out.println("enter the input");
+while(true){
+int input=scn.next();
+String rev="";
+if(input!=null && input.isEmpty()){
+System.out.println(input)
+}
+else{
+for(int i=input.length()-1;i>=0;i--){
+reverse=rev+charAt(i);
+}
+}
+System.out.println(reverse);
+}
+}
+}
+----------------------------------------------
+Palindrome integer
+
+public class Palindrome{
+public static void main(String [] args){
+
+int number=121;
+int temp=number;//storing the permanent number into temporary variable i,e;temp,
+int rev=0//need reverse of number,(Logic used is reverse a number),rem//need to find reminder..
+
+while(temp>0){
+rem=temp%10;//first wee need to find reminder...10)121(12
+rev=(rev*10)+rem;			           120
+temp=temp*10;
+	}
+					   ----
+						    001-->this is remainder,so modulus operand gives us this operation and always integer number(whole number)
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,127 @@
+			
+//				if (entity != null && dto.getPassword().equals(entity.getPassword())) {
+//					// entity.getWrongPasswordCount should only be reset to 0 if the count is more
+//					// than 0
+//					entity.setAcc_Status(AccountStatus.UNBLOCKED.value);
+//					if(entity.getAcc_Status().equals(AccountStatus.UNBLOCKED.value)) {
+//						entity.setWrongPasswordCount(0);
+////						response = updateByEmailId(entity.getEmail(), 0);
+//						System.out.println("LoggedIn successfully and response is" + response);
+//						model.addAttribute("Loggedin", "LoggedIn successfully");
+//						return "Welcome";
+//						
+//					}
+//					else if(entity.getAcc_Status().equals(AccountStatus.BLOCKED.value)) {
+//						System.out.println("Account is in blocked state");
+//						model.addAttribute("Blocked","Your account is in blocked state");
+//						return "SignIn";
+//						
+//					}
+
+
+if(entity==null) {
+						
+					CustomerInsightsEntity	resEntity=findByEmail(entity.getEmail(),model);
+			if(resEntity!=null && entity.getAcc_Status().equals(AccountStatus.UNBLOCKED.value)) {
+				
+				System.out.println("account is in unblocked state");
+				
+				if (entity.getWrongPasswordCount() != null && entity.getWrongPasswordCount() > 0) {
+					int count1 = 0;
+					count = entity.getWrongPasswordCount();
+					response = updateByEmailId(entity.getEmail(), ++count,AccountStatus.UNBLOCKED.value);
+					System.out.println("Logged Failed! and response is " + response);
+					model.addAttribute(LOGIN_FAILED,
+							"Login Failed due to invalid credentials, " + (3 - count) + " attempts left");
+				}
+				else if (entity.getWrongPasswordCount() >= 2) {
+					count = entity.getWrongPasswordCount();
+					response = updateByEmailId(entity.getEmail(), ++count, AccountStatus.BLOCKED.value);
+					System.out.println("Logged Failed!---> login attempts exceeded, " + response);
+					model.addAttribute(LOGIN_FAILED,
+							"Your account is locked out as the login attempts are exceeded");
+
+					 
+				 }
+			
+				
+			
+//						if the count is equal to or less than 1,then the count should be ++;
+//						if the count == 2,then we have to set the count ie(entity.setWpc(current number))and set the account status also;
+						
+						if (entity.getWrongPasswordCount() == null) {
+						response = updateByEmailId(entity.getEmail(), ++count, null);
+//						response = updateByEmailId(entity.getEmail(), ++count, null);
+						System.out.println("Logged Failed! and response is " + response);
+						model.addAttribute(LOGIN_FAILED,
+								"Login Failed due to invalid credentials, " + (3 - count) + " attempts left");
+					
+					}
+					 
+					
+				}
+				
+				
+			}
+			
+					}
+					if (entity.getWrongPasswordCount() != null && entity.getWrongPasswordCount() > 0) {
+						response = updateByEmailId(entity.getEmail(), 0, null);
+					}
+					System.out.println("LoggedIn successfully and response is" + response);
+					model.addAttribute("Loggedin", "LoggedIn successfully");
+					return "Welcome";
+				}
+		else if (entity != null) {
+					// set wrongPassword count to 0 and then increment by 1
+					int count = 0;
+					if (entity.getWrongPasswordCount() == null) {
+						// write method to update this entity with new count
+						response = updateByEmailId(entity.getEmail(), ++count, null);
+						System.out.println("Logged Failed! and response is " + response);
+						model.addAttribute(LOGIN_FAILED,
+								"Login Failed due to invalid credentials, " + (3 - count) + " attempts left");
+					} else if (entity.getWrongPasswordCount() != null && entity.getWrongPasswordCount() < 2) {
+						// write method to update this entity with new count
+						count = entity.getWrongPasswordCount();
+						response = updateByEmailId(entity.getEmail(), ++count, null);
+						System.out.println("Logged Failed! and response is " + response);
+						model.addAttribute(LOGIN_FAILED,
+								"Login Failed due to invalid credentials, " + (3 - count) + " attempts left");
+					} else if (entity.getWrongPasswordCount() >= 2) {
+						// check if the count is equal to 2 or greater than 2 (possible in case of
+						// manual DB updates), count increment further is needless as maximum login
+						// attempts is 3 as needless DB calls can be avoided. Count increment is
+						// unnecessary unless number of login attempts have to be tracked.
+						System.out.println("Logged Failed!---> login attempts exceeded, " + response);
+						model.addAttribute(LOGIN_FAILED,
+								"Your account is locked out as the login attempts are exceeded");
+
+					}
+					return "Welcome";
+				}
+				int count=0;
+				/*
+				 * if(isValidPwd) { System.out.println("LoggedIn successfully");
+				 * entity.setWrongPasswordCount(0);
+				 * model.addAttribute("Loggedin","LoggedIn successfully"); return "Welcome"; }
+				 */
+				else {
+		 count=entity.getWrongPasswordCount()+1;
+		 if(count>=3) {
+			 System.out.println("account blocked");
+			 model.addAttribute("Blocked","Account blocked");
+			 return "SignIn";
+		 }
+		 else {
+			 entity.setWrongPasswordCount(count);
+		 }
+				if(dto.getPassword()!=entity.getPassword()) {
+					entity.setWrongPasswordCount(count1);
+					model.addAttribute("errorMessage","")
+				}
+				}
+	
+				return "SignIn";
+				}
+	}

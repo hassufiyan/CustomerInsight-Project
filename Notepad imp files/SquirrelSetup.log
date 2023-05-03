@@ -1,0 +1,288 @@
+﻿2019-06-18 05:38:17> Program: Starting Squirrel Updater: --install .
+2019-06-18 05:38:17> Program: Starting install, writing to C:\Users\Sufiyan Hasan\AppData\Local\SquirrelTemp
+2019-06-18 05:38:17> Program: About to install to: C:\Users\Sufiyan Hasan\AppData\Local\WhatsApp
+2019-06-18 05:38:20> CheckForUpdateImpl: Couldn't write out staging user ID, this user probably shouldn't get beta anything: System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Users\Sufiyan Hasan\AppData\Local\WhatsApp\packages\.betaId'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.File.InternalWriteAllText(String path, String contents, Encoding encoding, Boolean checkHost)
+   at System.IO.File.WriteAllText(String path, String contents, Encoding encoding)
+   at Squirrel.UpdateManager.CheckForUpdateImpl.getOrCreateStagedUserId()
+2019-06-18 05:38:20> CheckForUpdateImpl: Failed to load local releases, starting from scratch: System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Users\Sufiyan Hasan\AppData\Local\WhatsApp\packages\RELEASES'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at Squirrel.Utility.LoadLocalReleases(String localReleaseFile)
+   at Squirrel.UpdateManager.CheckForUpdateImpl.<CheckForUpdate>d__2.MoveNext()
+2019-06-18 05:38:20> CheckForUpdateImpl: Reading RELEASES file from C:\Users\Sufiyan Hasan\AppData\Local\SquirrelTemp
+2019-06-18 05:38:21> CheckForUpdateImpl: First run or local directory is corrupt, starting from scratch
+2019-06-18 05:38:21> ApplyReleasesImpl: Writing files to app directory: C:\Users\Sufiyan Hasan\AppData\Local\WhatsApp\app-0.3.3328
+2019-06-18 05:38:58> LogHost: Rigging execution stub for WhatsApp_ExecutionStub.exe to C:\Users\Sufiyan Hasan\AppData\Local\WhatsApp\WhatsApp.exe
+2019-06-18 05:39:05> ApplyReleasesImpl: Squirrel Enabled Apps: [C:\Users\Sufiyan Hasan\AppData\Local\WhatsApp\app-0.3.3328\WhatsApp.exe]
+2019-06-18 05:39:17> ApplyReleasesImpl: Starting fixPinnedExecutables
+2019-06-18 05:39:17> ApplyReleasesImpl: Examining Pin: File Explorer.lnk
+2019-06-18 05:39:17> ApplyReleasesImpl: Examining Pin: Google Chrome.lnk
+2019-06-18 05:39:17> ApplyReleasesImpl: Examining Pin: Windows Features.lnk
+2019-06-18 05:39:17> ApplyReleasesImpl: Fixing up tray icons
+2019-06-18 05:39:17> ApplyReleasesImpl: Couldn't rewrite shim RegKey, most likely no apps are shimmed: System.NullReferenceException: Object reference not set to an instance of an object.
+   at Squirrel.UpdateManager.ApplyReleasesImpl.<unshimOurselves>b__13_0(RegistryView view)
+2019-06-18 05:39:17> ApplyReleasesImpl: Couldn't rewrite shim RegKey, most likely no apps are shimmed: System.NullReferenceException: Object reference not set to an instance of an object.
+   at Squirrel.UpdateManager.ApplyReleasesImpl.<unshimOurselves>b__13_0(RegistryView view)
+2019-06-18 05:39:17> ApplyReleasesImpl: cleanDeadVersions: for version 0.3.3328
+2019-06-18 05:39:17> ApplyReleasesImpl: cleanDeadVersions: exclude folder app-0.3.3328
+2020-08-09 03:04:18> Program: Starting Squirrel Updater: --install .
+2020-08-09 03:04:20> Program: Starting install, writing to C:\Users\Sufiyan Hasan\AppData\Local\SquirrelTemp
+2020-08-09 03:04:21> Program: About to install to: C:\Users\Sufiyan Hasan\AppData\Local\WhatsApp
+2020-08-09 03:04:21> Program: Install path C:\Users\Sufiyan Hasan\AppData\Local\WhatsApp already exists, burning it to the ground
+2020-08-09 03:04:28> CheckForUpdateImpl: Couldn't write out staging user ID, this user probably shouldn't get beta anything: System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Users\Sufiyan Hasan\AppData\Local\WhatsApp\packages\.betaId'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.File.InternalWriteAllText(String path, String contents, Encoding encoding, Boolean checkHost)
+   at System.IO.File.WriteAllText(String path, String contents, Encoding encoding)
+   at Squirrel.UpdateManager.CheckForUpdateImpl.getOrCreateStagedUserId()
+2020-08-09 03:04:28> CheckForUpdateImpl: Failed to load local releases, starting from scratch: System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Users\Sufiyan Hasan\AppData\Local\WhatsApp\packages\RELEASES'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at Squirrel.Utility.LoadLocalReleases(String localReleaseFile)
+   at Squirrel.UpdateManager.CheckForUpdateImpl.<CheckForUpdate>d__2.MoveNext()
+2020-08-09 03:04:28> CheckForUpdateImpl: Reading RELEASES file from C:\Users\Sufiyan Hasan\AppData\Local\SquirrelTemp
+2020-08-09 03:04:29> CheckForUpdateImpl: First run or local directory is corrupt, starting from scratch
+2020-08-09 03:04:32> ApplyReleasesImpl: Writing files to app directory: C:\Users\Sufiyan Hasan\AppData\Local\WhatsApp\app-2.2031.4
+2020-08-09 03:04:43> LogHost: Rigging execution stub for WhatsApp_ExecutionStub.exe to C:\Users\Sufiyan Hasan\AppData\Local\WhatsApp\WhatsApp.exe
+2020-08-09 03:04:53> ApplyReleasesImpl: Squirrel Enabled Apps: [C:\Users\Sufiyan Hasan\AppData\Local\WhatsApp\app-2.2031.4\WhatsApp.exe]
+2020-08-09 03:05:05> ApplyReleasesImpl: Starting fixPinnedExecutables
+2020-08-09 03:05:05> ApplyReleasesImpl: Examining Pin: File Explorer.lnk
+2020-08-09 03:05:05> ApplyReleasesImpl: Examining Pin: Firefox.lnk
+2020-08-09 03:05:05> ApplyReleasesImpl: Examining Pin: Google Chrome.lnk
+2020-08-09 03:05:05> ApplyReleasesImpl: Fixing up tray icons
+2020-08-09 03:05:05> ApplyReleasesImpl: cleanDeadVersions: for version 2.2031.4
+2020-08-09 03:05:05> ApplyReleasesImpl: cleanDeadVersions: exclude folder app-2.2031.4
+2020-08-10 06:55:28> Program: Starting Squirrel Updater: --install .
+2020-08-10 06:55:30> Program: Starting install, writing to C:\Users\Sufiyan Hasan\AppData\Local\SquirrelTemp
+2020-08-10 06:55:31> Program: About to install to: C:\Users\Sufiyan Hasan\AppData\Local\WhatsApp
+2020-08-10 06:55:31> Program: Install path C:\Users\Sufiyan Hasan\AppData\Local\WhatsApp already exists, burning it to the ground
+2020-08-10 06:55:36> CheckForUpdateImpl: Couldn't write out staging user ID, this user probably shouldn't get beta anything: System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Users\Sufiyan Hasan\AppData\Local\WhatsApp\packages\.betaId'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.File.InternalWriteAllText(String path, String contents, Encoding encoding, Boolean checkHost)
+   at System.IO.File.WriteAllText(String path, String contents, Encoding encoding)
+   at Squirrel.UpdateManager.CheckForUpdateImpl.getOrCreateStagedUserId()
+2020-08-10 06:55:36> CheckForUpdateImpl: Failed to load local releases, starting from scratch: System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Users\Sufiyan Hasan\AppData\Local\WhatsApp\packages\RELEASES'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at Squirrel.Utility.LoadLocalReleases(String localReleaseFile)
+   at Squirrel.UpdateManager.CheckForUpdateImpl.<CheckForUpdate>d__2.MoveNext()
+2020-08-10 06:55:36> CheckForUpdateImpl: Reading RELEASES file from C:\Users\Sufiyan Hasan\AppData\Local\SquirrelTemp
+2020-08-10 06:55:37> CheckForUpdateImpl: First run or local directory is corrupt, starting from scratch
+2020-08-10 06:55:39> ApplyReleasesImpl: Writing files to app directory: C:\Users\Sufiyan Hasan\AppData\Local\WhatsApp\app-2.2031.4
+2020-08-10 06:55:51> LogHost: Rigging execution stub for WhatsApp_ExecutionStub.exe to C:\Users\Sufiyan Hasan\AppData\Local\WhatsApp\WhatsApp.exe
+2020-08-10 06:56:04> ApplyReleasesImpl: Squirrel Enabled Apps: [C:\Users\Sufiyan Hasan\AppData\Local\WhatsApp\app-2.2031.4\WhatsApp.exe]
+2020-08-10 06:56:16> ApplyReleasesImpl: Starting fixPinnedExecutables
+2020-08-10 06:56:16> ApplyReleasesImpl: Examining Pin: File Explorer.lnk
+2020-08-10 06:56:16> ApplyReleasesImpl: Examining Pin: Firefox.lnk
+2020-08-10 06:56:16> ApplyReleasesImpl: Examining Pin: Google Chrome.lnk
+2020-08-10 06:56:16> ApplyReleasesImpl: Fixing up tray icons
+2020-08-10 06:56:16> ApplyReleasesImpl: cleanDeadVersions: for version 2.2031.4
+2020-08-10 06:56:16> ApplyReleasesImpl: cleanDeadVersions: exclude folder app-2.2031.4
+2020-09-22 07:58:36> Program: Starting Squirrel Updater: --install .
+2020-09-22 07:58:36> Program: Starting install, writing to C:\Users\Sufiyan Hasan\AppData\Local\SquirrelTemp
+2020-09-22 07:58:36> Program: About to install to: C:\Users\Sufiyan Hasan\AppData\Local\WhatsApp
+2020-09-22 07:58:36> Program: Install path C:\Users\Sufiyan Hasan\AppData\Local\WhatsApp already exists, burning it to the ground
+2020-09-22 07:58:37> CheckForUpdateImpl: Couldn't write out staging user ID, this user probably shouldn't get beta anything: System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Users\Sufiyan Hasan\AppData\Local\WhatsApp\packages\.betaId'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.File.InternalWriteAllText(String path, String contents, Encoding encoding, Boolean checkHost)
+   at System.IO.File.WriteAllText(String path, String contents, Encoding encoding)
+   at Squirrel.UpdateManager.CheckForUpdateImpl.getOrCreateStagedUserId()
+2020-09-22 07:58:37> CheckForUpdateImpl: Failed to load local releases, starting from scratch: System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Users\Sufiyan Hasan\AppData\Local\WhatsApp\packages\RELEASES'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at Squirrel.Utility.LoadLocalReleases(String localReleaseFile)
+   at Squirrel.UpdateManager.CheckForUpdateImpl.<CheckForUpdate>d__2.MoveNext()
+2020-09-22 07:58:38> CheckForUpdateImpl: Reading RELEASES file from C:\Users\Sufiyan Hasan\AppData\Local\SquirrelTemp
+2020-09-22 07:58:38> CheckForUpdateImpl: First run or local directory is corrupt, starting from scratch
+2020-09-22 07:58:39> ApplyReleasesImpl: Writing files to app directory: C:\Users\Sufiyan Hasan\AppData\Local\WhatsApp\app-2.2031.4
+2020-09-22 07:58:47> LogHost: Rigging execution stub for WhatsApp_ExecutionStub.exe to C:\Users\Sufiyan Hasan\AppData\Local\WhatsApp\WhatsApp.exe
+2020-09-22 07:58:55> ApplyReleasesImpl: Squirrel Enabled Apps: [C:\Users\Sufiyan Hasan\AppData\Local\WhatsApp\app-2.2031.4\WhatsApp.exe]
+2020-09-22 07:59:03> ApplyReleasesImpl: Starting fixPinnedExecutables
+2020-09-22 07:59:03> ApplyReleasesImpl: Examining Pin: File Explorer.lnk
+2020-09-22 07:59:03> ApplyReleasesImpl: Examining Pin: Firefox.lnk
+2020-09-22 07:59:03> ApplyReleasesImpl: Examining Pin: Google Chrome.lnk
+2020-09-22 07:59:03> ApplyReleasesImpl: Examining Pin: Microsoft Edge.lnk
+2020-09-22 07:59:03> ApplyReleasesImpl: Fixing up tray icons
+2020-09-22 07:59:03> ApplyReleasesImpl: cleanDeadVersions: for version 2.2031.4
+2020-09-22 07:59:03> ApplyReleasesImpl: cleanDeadVersions: exclude folder app-2.2031.4
+2021-08-04 00:31:56> Program: Starting Squirrel Updater: --install .
+2021-08-04 00:31:57> Program: Starting install, writing to C:\Users\Sufiyan Hasan\AppData\Local\SquirrelTemp
+2021-08-04 00:31:57> Program: About to install to: C:\Users\Sufiyan Hasan\AppData\Local\WhatsApp
+2021-08-04 00:31:57> Program: Install path C:\Users\Sufiyan Hasan\AppData\Local\WhatsApp already exists, burning it to the ground
+2021-08-04 00:32:00> CheckForUpdateImpl: Couldn't write out staging user ID, this user probably shouldn't get beta anything: System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Users\Sufiyan Hasan\AppData\Local\WhatsApp\packages\.betaId'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.File.InternalWriteAllText(String path, String contents, Encoding encoding, Boolean checkHost)
+   at System.IO.File.WriteAllText(String path, String contents, Encoding encoding)
+   at Squirrel.UpdateManager.CheckForUpdateImpl.getOrCreateStagedUserId()
+2021-08-04 00:32:00> CheckForUpdateImpl: Failed to load local releases, starting from scratch: System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Users\Sufiyan Hasan\AppData\Local\WhatsApp\packages\RELEASES'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at Squirrel.Utility.LoadLocalReleases(String localReleaseFile)
+   at Squirrel.UpdateManager.CheckForUpdateImpl.<CheckForUpdate>d__2.MoveNext()
+2021-08-04 00:32:00> CheckForUpdateImpl: Reading RELEASES file from C:\Users\Sufiyan Hasan\AppData\Local\SquirrelTemp
+2021-08-04 00:32:00> CheckForUpdateImpl: First run or local directory is corrupt, starting from scratch
+2021-08-04 00:32:01> ApplyReleasesImpl: Writing files to app directory: C:\Users\Sufiyan Hasan\AppData\Local\WhatsApp\app-2.2126.15
+2021-08-04 00:32:11> LogHost: Rigging execution stub for WhatsApp_ExecutionStub.exe to C:\Users\Sufiyan Hasan\AppData\Local\WhatsApp\WhatsApp.exe
+2021-08-04 00:32:17> ApplyReleasesImpl: Squirrel Enabled Apps: [C:\Users\Sufiyan Hasan\AppData\Local\WhatsApp\app-2.2126.15\WhatsApp.exe]
+2021-08-04 00:32:22> ApplyReleasesImpl: Starting fixPinnedExecutables
+2021-08-04 00:32:22> ApplyReleasesImpl: Examining Pin: File Explorer.lnk
+2021-08-04 00:32:22> ApplyReleasesImpl: Examining Pin: Firefox.lnk
+2021-08-04 00:32:22> ApplyReleasesImpl: Examining Pin: Google Chrome.lnk
+2021-08-04 00:32:22> ApplyReleasesImpl: Examining Pin: Microsoft Edge.lnk
+2021-08-04 00:32:22> ApplyReleasesImpl: Fixing up tray icons
+2021-08-04 00:32:22> ApplyReleasesImpl: cleanDeadVersions: for version 2.2126.15
+2021-08-04 00:32:22> ApplyReleasesImpl: cleanDeadVersions: exclude folder app-2.2126.15
+2022-09-08 04:02:51> Program: Starting Squirrel Updater: --install . --rerunningWithoutUAC --exeName=TeamsSetupx64_s_8DA91851B5EAEE0-7-0_c_w_.exe --bootstrapperMode
+2022-09-08 04:02:51> LogHost: Write failed.
+2022-09-08 04:02:51> LogHost: Message: MID does not exist
+2022-09-08 04:02:52> LogHost: Stack trace: System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Users\Sufiyan Hasan\AppData\Roaming\Microsoft\Teams\SquirrelTelemetry.log'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at Telemetry.AriaWrapper.LogToFile(String message)
+2022-09-08 04:02:52> LogHost: Write failed.
+2022-09-08 04:02:52> LogHost: Message: Scenario.Status: success, scenario: a4b19149-17d2-4460-aec1-f642aa014616, Scenario.Name: desktop_squirrel_stubinstall, Scenario.Step: start, sequence: 0, appversion: , platformId: 27, DeviceInfo.OsName: Windows, DeviceInfo.CpuArchitecture: x64, DeviceInfo.OsVersion: 10.0.19044.0, AppInfo.ProcessArchitecture: x86, AppInfo.ClientType: desktop, dllSearchPathState: unset, clientType: desktop, source: exe, distSrc: default, breadcrumb: , desktopSession: desktop-22292933-aea7-45da-830d-0091dec540bd, installSessionId: d3cb7d36ab4b9f83dfa55e3634d9865b80b52401840670d224d966d31658ea53, shortUrlId: 8DA91851B5EAEE0-7-0, delta: 9, scenarioDelta: 9, elapsed: 1662634971260, stepDelta: 0, DeviceInfo.ComputerUuid: 1dcd741ced64e611b27e98e7f486dde7, DeviceInfo.OfficeMachineId: 1dcd741ced64e611b27e98e7f486dde7, InstallerVersion: 3.0.4.0, eventpdclevel: 1, userpdclevel: 0
+2022-09-08 04:02:52> LogHost: Stack trace: System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Users\Sufiyan Hasan\AppData\Roaming\Microsoft\Teams\SquirrelTelemetry.log'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at Telemetry.AriaWrapper.LogToFile(String message)
+2022-09-08 04:02:52> Program: bootStrapperModeSettings: pdsEndpoint:https://teams.microsoft.com/desktopclient/installer/windows/
+2022-09-08 04:02:52> RegistryService: TryGetRegKey: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\CurrentBuildNumber exists. Data - 19044
+2022-09-08 04:02:52> BootstrapperInstallManager: Teams 2 client is not supported on this OS version
+2022-09-08 04:02:52> LogHost: Write failed.
+2022-09-08 04:02:52> LogHost: Message: DownloadUrlRetry: 0, endpointUrl: https://teams.microsoft.com/desktopclient/installer/windows/x64, Scenario.Status: success, scenario: a4b19149-17d2-4460-aec1-f642aa014616, Scenario.Name: desktop_squirrel_stubinstall, Scenario.Step: download_url_start, sequence: 1, appversion: , platformId: 27, DeviceInfo.OsName: Windows, DeviceInfo.CpuArchitecture: x64, DeviceInfo.OsVersion: 10.0.19044.0, AppInfo.ProcessArchitecture: x86, AppInfo.ClientType: desktop, dllSearchPathState: unset, clientType: desktop, source: exe, distSrc: default, breadcrumb: , desktopSession: desktop-22292933-aea7-45da-830d-0091dec540bd, installSessionId: d3cb7d36ab4b9f83dfa55e3634d9865b80b52401840670d224d966d31658ea53, shortUrlId: 8DA91851B5EAEE0-7-0, delta: 872, scenarioDelta: 872, elapsed: 1662634972123, stepDelta: 863, DeviceInfo.ComputerUuid: 1dcd741ced64e611b27e98e7f486dde7, DeviceInfo.OfficeMachineId: 1dcd741ced64e611b27e98e7f486dde7, InstallerVersion: 3.0.4.0, eventpdclevel: 1, userpdclevel: 0
+2022-09-08 04:02:52> LogHost: Stack trace: System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Users\Sufiyan Hasan\AppData\Roaming\Microsoft\Teams\SquirrelTelemetry.log'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at Telemetry.AriaWrapper.LogToFile(String message)
+2022-09-08 04:02:52> FileDownloader: Downloading url: https://teams.microsoft.com/desktopclient/installer/windows/x64
+2022-09-08 04:02:52> LogHost: Write failed.
+2022-09-08 04:02:52> LogHost: Message: DownloadUrlRetry: 0, endpointUrl: https://teams.microsoft.com/desktopclient/installer/windows/x64, sizeInBytes: 94, Scenario.Status: success, scenario: a4b19149-17d2-4460-aec1-f642aa014616, Scenario.Name: desktop_squirrel_stubinstall, Scenario.Step: download_url_end, sequence: 2, appversion: , platformId: 27, DeviceInfo.OsName: Windows, DeviceInfo.CpuArchitecture: x64, DeviceInfo.OsVersion: 10.0.19044.0, AppInfo.ProcessArchitecture: x86, AppInfo.ClientType: desktop, dllSearchPathState: unset, clientType: desktop, source: exe, distSrc: default, breadcrumb: , desktopSession: desktop-22292933-aea7-45da-830d-0091dec540bd, installSessionId: d3cb7d36ab4b9f83dfa55e3634d9865b80b52401840670d224d966d31658ea53, shortUrlId: 8DA91851B5EAEE0-7-0, delta: 1603, scenarioDelta: 1603, elapsed: 1662634972854, stepDelta: 731, DeviceInfo.ComputerUuid: 1dcd741ced64e611b27e98e7f486dde7, DeviceInfo.OfficeMachineId: 1dcd741ced64e611b27e98e7f486dde7, InstallerVersion: 3.0.4.0, eventpdclevel: 1, userpdclevel: 0
+2022-09-08 04:02:52> LogHost: Stack trace: System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Users\Sufiyan Hasan\AppData\Roaming\Microsoft\Teams\SquirrelTelemetry.log'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at Telemetr2022-09-21 03:06:36> Program: Starting Squirrel Updater: --install . --exeName=TeamsSetupx64_s_8DA9BB43265C539-7-0_c_w_.exe --bootstrapperMode
+2022-09-21 03:06:39> Program: bootStrapperModeSettings: pdsEndpoint:https://teams.microsoft.com/desktopclient/installer/windows/
+2022-09-21 03:06:40> RegistryService: TryGetRegKey: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\CurrentBuildNumber exists. Data - 19044
+2022-09-21 03:06:40> BootstrapperInstallManager: Teams 2 client is not supported on this OS version
+2022-09-21 03:06:41> FileDownloader: Downloading url: https://teams.microsoft.com/desktopclient/installer/windows/x64
+2022-09-21 03:06:42> Program: Config already exists. Deleting first.
+2022-09-21 03:06:43> Program: Running contextual installation logic
+2022-09-21 03:06:43> Program: Config already exists. Deleting first.
+2022-09-21 03:06:43> Program: ContextualInstaller returned: True. Using filename: TeamsSetupx64_s_8DA9BB43265C539-7-0_c_w_.exe
+2022-09-21 03:06:43> UpdateManager: using rootAppDirectory: C:\Users\Sufiyan Hasan\AppData\Local\Microsoft\Teams
+2022-09-21 03:06:43> Program: About to install to: C:\Users\Sufiyan Hasan\AppData\Local\Microsoft\Teams
+2022-09-21 03:06:43> Program: Install path C:\Users\Sufiyan Hasan\AppData\Local\Microsoft\Teams already exists, burning it to the ground
+2022-09-21 03:06:43> RegistryService: RegKeyExists: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\Teams\ does not exist
+2022-09-21 03:06:45> Program: Setup.json exist, copying over
+2022-09-21 03:06:45> RegistryService: RegKeyExists: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run does not have TeamsMachineInstaller
+2022-09-21 03:06:45> Program: CheckMsiAndTryAddInstallSource: Not MSI, no need to add HKEY_CURRENT_USER\Software\Microsoft\Office\Teams\InstallSource
+2022-09-21 03:06:46> CheckForUpdateImpl: Couldn't write out staging user ID, this user probably shouldn't get beta anything: System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Users\Sufiyan Hasan\AppData\Local\Microsoft\Teams\packages\.betaId'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.File.InternalWriteAllText(String path, String contents, Encoding encoding, Boolean checkHost)
+   at System.IO.File.WriteAllText(String path, String contents, Encoding encoding)
+   at Squirrel.UpdateManager.CheckForUpdateImpl.getOrCreateStagedUserId()
+2022-09-21 03:06:46> CheckForUpdateImpl: Failed to load local releases, starting from scratch: System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Users\Sufiyan Hasan\AppData\Local\Microsoft\Teams\packages\RELEASES'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at Squirrel.Utility.LoadLocalReleases(String localReleaseFile)
+   at Squirrel.UpdateManager.CheckForUpdateImpl.<CheckForUpdate>d__7.MoveNext()
+2022-09-21 03:06:46> CheckForUpdateImpl: Downloading RELEASES file from https://statics.teams.cdn.office.net/production-windows-x64/1.5.00.21668
+2022-09-21 03:06:47> FileDownloader: Downloading url: https://statics.teams.cdn.office.net/production-windows-x64/1.5.00.21668/RELEASES
+2022-09-21 03:06:47> CheckForUpdateImpl: First run or local directory is corrupt, starting from scratch
+2022-09-21 03:06:48> FileDownloader: Downloading file: https://statics.teams.cdn.office.net/production-windows-x64/1.5.00.21668/Teams-1.5.00.21668-full.nupkg
+2022-09-21 03:07:52> RegistryService: RegKeyExists: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\Teams\ does not exist
+2022-09-21 03:07:52> ApplyReleasesImpl: No delta packages found. Applying current release package.
+2022-09-21 03:07:53> ApplyReleasesImpl: getting squirrel aware apps failed with exception Could not find a part of the path 'C:\Users\Sufiyan Hasan\AppData\Local\Microsoft\Teams\current'.
+2022-09-21 03:07:53> ApplyReleasesImpl: Writing files to app directory: C:\Users\Sufiyan Hasan\AppData\Local\Microsoft\Teams\current
+2022-09-21 03:08:05> RegistryService: RegKeyExists: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\Teams\ does not exist
+2022-09-21 03:08:07> ApplyReleasesImpl: Squirrel Enabled Apps: [C:\Users\Sufiyan Hasan\AppData\Local\Microsoft\Teams\current\Teams.exe]
+2022-09-21 03:08:18> ApplyReleasesImpl: About to RemoveOldShorcuts for Teams.exe, rootAppDir C:\Users\Sufiyan Hasan\AppData\Local\Microsoft\Teams
+2022-09-21 03:08:19> RegistryService: RegKeyExists: HKEY_CURRENT_USER\Software\Policies\Microsoft\Cloud\Office\16.0\Teams does not exist
+2022-09-21 03:08:19> ApplyReleasesImpl: Registry value Software\Policies\Microsoft\Cloud\Office\16.0\Teams\PreventFirstLaunchAfterInstall does not exist
+2022-09-21 03:08:19> RegistryService: RegKeyExists: HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\16.0\Teams does not exist
+2022-09-21 03:08:19> ApplyReleasesImpl: Registry value Software\Policies\Microsoft\Office\16.0\Teams\PreventFirstLaunchAfterInstall does not exist
+2022-09-21 03:08:19> RegistryService: RegKeyExists: HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Teams does not exist
+2022-09-21 03:08:19> ApplyReleasesImpl: Registry value Software\Microsoft\Office\16.0\Teams\PreventFirstLaunchAfterInstall does not exist
+2022-09-21 03:08:19> ApplyReleasesImpl: Registry flags are not set: proceed with default value NotConfigured
+2022-09-21 03:08:19> ApplyReleasesImpl: Starting fixPinnedExecutables
+2022-09-21 03:08:19> ApplyReleasesImpl: Examining Pin: File Explorer.lnk
+2022-09-21 03:08:19> ApplyReleasesImpl: Examining Pin: Firefox.lnk
+2022-09-21 03:08:19> ApplyReleasesImpl: Examining Pin: Google Chrome.lnk
+2022-09-21 03:08:19> ApplyReleasesImpl: Examining Pin: Microsoft Edge.lnk
+2022-09-21 03:08:19> ApplyReleasesImpl: Fixing up tray icons
+2022-09-21 03:08:19> ApplyReleasesImpl: Couldn't rewrite shim RegKey, most likely no apps are shimmed: System.NullReferenceException: Object reference not set to an instance of an object.
+   at Squirrel.UpdateManager.ApplyReleasesImpl.<unshimOurselves>b__34_0(RegistryView view)
+2022-09-21 03:08:19> ApplyReleasesImpl: Couldn't rewrite shim RegKey, most likely no apps are shimmed: System.NullReferenceException: Object reference not set to an instance of an object.
+   at Squirrel.UpdateManager.ApplyReleasesImpl.<unshimOurselves>b__34_0(RegistryView view)
+2022-09-21 03:08:19> MeetingAddinInstaller: System.ArgumentException: Cannot delete a subkey tree because the subkey does not exist.
+   at System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   at Microsoft.Win32.RegistryKey.DeleteSubKeyTree(String subkey, Boolean throwOnMissingSubKey)
+   at Microsoft.Win32.RegistryKey.DeleteSubKeyTree(String subkey)
+   at Squirrel.MeetingAddinInstaller.<InstallMeetingAddinAsync>d__15.MoveNext()
+2022-09-21 03:08:19> MeetingAddinInstaller: StagedAppDirectory does not exist. Using Current
+2022-09-21 03:08:19> MeetingAddinInstaller: There is no version.txt. Falling back to getting version from folder name
+2022-09-21 03:08:19> MeetingAddinInstaller: Version: 1.0.22209.4; addinPackageDirectory: 1.0.22209.4
+2022-09-21 03:08:19> MeetingAddinInstaller: .dead exists: False
+2022-09-21 03:08:19> MeetingAddinInstaller: path to .dead: C:\Users\Sufiyan Hasan\AppData\Local\Microsoft\TeamsMeetingAddin\1.0.22209.4\.dead
+2022-09-21 03:08:19> MeetingAddinInstaller: before cleanup unused versions
+2022-09-21 03:08:21> MeetingAddinInstaller: Addin directory exists. Copy was successful
+2022-09-21 03:08:27> MeetingAddinInstaller: Version 1.0.22209.4 of the meeting add-in is now installed
+2022-09-21 03:08:27> PresenceAddinInstaller: Installing Teams Presence addin for Outlook...
+2022-09-21 03:08:27> PresenceAddinInstaller: Copying C:\Users\Sufiyan Hasan\AppData\Local\Microsoft\Teams\current\resources\assets\tlb\Uc.tlb to C:\Users\Sufiyan Hasan\AppData\Local\Microsoft\TeamsPresenceAddin
+2022-09-21 03:08:27> PresenceAddinInstaller: Copying C:\Users\Sufiyan Hasan\AppData\Local\Microsoft\Teams\current\resources\assets\tlb\Uc.win32.tlb to C:\Users\Sufiyan Hasan\AppData\Local\Microsoft\TeamsPresenceAddin
+2022-09-21 03:08:27> PresenceAddinInstaller: check if UC TypeLib points to current\resources\assets\tlb\Uc.tlb
+2022-09-21 03:08:27> PresenceAddinInstaller: Registering UC Typelib WIN32 under HKCU...
+2022-09-21 03:08:30> PresenceAddinInstaller: UC Typelib WIN32 successfully registered to C:\Users\Sufiyan Hasan\AppData\Local\Microsoft\TeamsPresenceAddin\Uc.win32.tlb under HKCU!
+2022-09-21 03:08:30> PresenceAddinInstaller: Registering UC Typelib WIN64 under HKCU...
+2022-09-21 03:08:30> PresenceAddinInstaller: UC Typelib WIN64 successfully registered to C:\Users\Sufiyan Hasan\AppData\Local\Microsoft\TeamsPresenceAddin\Uc.tlb under HKCU!
+2022-09-21 03:08:30> PresenceAddinInstaller: IM Provider registry key has been created!
+2022-09-21 03:08:30> ApplyReleasesImpl: cleanDeadVersions: for original version of  and current version of 1.5.00.21668
+2022-09-21 03:08:30> ApplyReleasesImpl: cleanDeadVersions: exclude current folder stage
+2022-09-21 03:08:32> RegistryService: TryDeleteRegKey: HKEY_CURRENT_USER\Software\Microsoft\Office\Teams not found
